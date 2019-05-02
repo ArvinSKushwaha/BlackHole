@@ -22,11 +22,11 @@ Photon[] remove(Photon[] arr, int index){
 Photon[] photons = new Photon[1000];
 //PeasyCam cam;
 void setup(){
-  size(700, 700, P2D);
+  fullScreen(P2D);
   background(0);
   //cam = new PeasyCam(this, 1000);
   for(int i = 0; i < photons.length; i++){
-    photons[i] = new Photon(new PVector(-200,map(i,0,photons.length, 179, 180)), BHMass);
+    photons[i] = new Photon(new PVector(-200,map(i,0,photons.length, 179.8, 179.9)), BHMass);
   }
 }
 
